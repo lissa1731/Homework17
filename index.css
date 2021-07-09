@@ -1,0 +1,99 @@
+.section {
+  padding: 20%;
+  text-align: right-align;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25em;
+  top: 50%;
+  left: 50%;
+}
+
+.image {
+  height: 25em;
+  width: 25em;
+}
+
+#aboutMe {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+#caseStudies {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+#resume {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+h1 {
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+
+button {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+footer {
+  justify-content: row;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display:flex;
+  justify-content:row;
+  text-align:center;
+}
+
+.footer1 {
+  padding:10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer2 {
+  padding:10px;
+  margin-left: 1200px;
+  margin-right: 10px;
+}

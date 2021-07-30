@@ -87,13 +87,41 @@ IMG.displayed {
   text-align: center;
   margin: 0px 5%;
   display: grid;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 15em 30px 400px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
     "image1 image2 image3"
     "header1 header2 header3"
     "summary1 summary2 summary3"
     ;
+}
+
+#summary1 {
+  grid-area: summary1;
+}
+
+#summary2 {
+  grid-area: summary2;
+}
+
+#summary3 {
+  grid-area: summary3;
+}
+
+#header1 {
+  grid-area: header1;
+}
+
+#header2 {
+  grid-area: header2;
+}
+
+#header3 {
+  grid-area: header3;
+}
+
+.heading {
+  padding:30px;
 }
 
 .image1 {
@@ -124,10 +152,11 @@ IMG.displayed {
 }
 
 footer {
-  justify-content: row;
+  justify-content: space-between;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .footer {
@@ -144,13 +173,12 @@ footer {
 
 .footer2 {
   padding:10px;
-  margin-left: 1200px;
   margin-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
   #categoryGrid {
-    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 15em 30px 400px 15em 30px 400px 15em 30px 400px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "image1"

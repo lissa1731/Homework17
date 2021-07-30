@@ -44,7 +44,7 @@
 }
 
 h1 {
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-family: red rose;
   text-align: center;
 }
 
@@ -58,12 +58,13 @@ button {
 }
 
 h2 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: reem kufi;
   text-align: center;
 }
 
+
 p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: reem kufi;
 }
 
 
@@ -72,6 +73,55 @@ IMG.displayed {
     display: block;
     margin-left: auto;
     margin-right: auto }
+
+
+
+.subheading {
+  text-align: center;
+  width: 300px;
+  margin: 5px auto;
+  padding: 25px;
+}
+
+#categoryGrid {
+  text-align: center;
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "image1 image2 image3"
+    "header1 header2 header3"
+    "summary1 summary2 summary3"
+    ;
+}
+
+.image1 {
+  grid-area: image1;
+  height: 15em;
+  width: 15em;
+}
+
+.image2 {
+  grid-area: image2;
+  height: 15em;
+  width: 15em;
+}
+
+.image3 {
+  grid-area: image3;
+  height: 15em;
+  width: 15em;
+}
+
+.summary {
+  text-align: left;
+  padding: 15%;
+ 
+}
+.categoryGridArea {
+  background-positon: center;
+}
 
 footer {
   justify-content: row;
@@ -96,4 +146,22 @@ footer {
   padding:10px;
   margin-left: 1200px;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #categoryGrid {
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image1"
+      "header1"
+      "summary1"
+      "image2"
+      "header2"
+      "summary2"
+      "image3"
+      "header3"
+      "summary3"
+      ;
+  }
 }
